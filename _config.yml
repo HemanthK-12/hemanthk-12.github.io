@@ -1,0 +1,69 @@
+# Site settings
+title: Hemanth Karthikeya G
+email: hemanthkarthikeya12@gmail.com
+description: >-
+  Computer science final year student, in BITS Pilani Hyderabad Campus.
+  Currently interning at Hevo Data as Data Scientist Intern.
+
+baseurl: "" # Leave empty for GitHub Pages (yourusername.github.io)
+url: "" # Change to your actual URL
+
+# GitHub username (for links)
+github_username: HemanthK-12
+sass:
+  quiet_deps: true
+# Build settings
+theme: minima
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+
+# Syntax highlighting
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    default_lang: python
+
+# Collections (for projects if needed)
+collections:
+  projects:
+    output: false
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Reading time calculation (words per minute)
+reading_time:
+  words_per_minute: 200
+
+# Site navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Now
+    url: /now
+
+# Footer links
+footer_links:
+  - title: GitHub
+    url: https://github.com/HemanthK-12
+  - title: Email
+    url: mailto:hemanthkarthikeya12@gmail.com
+  - title: Resume
+    url: /DevResumeLatex.pdf
