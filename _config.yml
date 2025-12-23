@@ -5,8 +5,8 @@ description: >-
   Computer science final year student, in BITS Pilani Hyderabad Campus.
   Currently interning at Hevo Data as Data Scientist Intern.
 
-baseurl: "/Portfolio" # Leave empty for GitHub Pages (yourusername.github.io)
-url: "https://hemanthk-12.github.io" # Change to your actual URL
+baseurl: "" # Leave empty for GitHub Pages (yourusername.github.io)
+url: "https://hemanthk-12.github.io/Portfolio" # Change to your actual URL
 
 # GitHub username (for links)
 github_username: HemanthK-12
