@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Debugging RL Training Failures: A Practical Guide"
+title: "Vaultwarden and my struggle with HTTPS"
 date: 2024-12-15
 tags: [reinforcement-learning, debugging, robotics]
+permalink: /posts/2025-12-22-vaultwarden-setup-selfhosting/
 ---
 
 Reinforcement learning training can fail in dozens of subtle ways. The reward goes up for 100 episodes, then crashes. The agent learns one behavior and ignores everything else. The policy converges to something that works in simulation but fails immediately on real hardware.

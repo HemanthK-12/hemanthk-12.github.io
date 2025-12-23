@@ -4,7 +4,7 @@ yourusername.github.io/
 ├── index.md              # Homepage
 ├── projects.md           # Projects page
 ├── now.md                # Now page
-├── _posts/               # Blog posts (markdown)
+├── _blog/               # Blog posts (markdown)
 │   └── YYYY-MM-DD-title.md
 ├── _layouts/
 │   ├── default.html      # Base template
@@ -119,7 +119,7 @@ yourusername.github.io/
 ├── index.md
 ├── projects.md
 ├── now.md
-├── _posts/
+├── _blog/
 │   └── YYYY-MM-DD-title.md
 ├── _layouts/
 ├── assets/css/style.css
