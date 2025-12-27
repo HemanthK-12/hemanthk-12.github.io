@@ -15,7 +15,7 @@ A timeline of my professional and technical experience.
 <div class="timeline-content">
 <h3>Data Scientist Intern — Hevo Data</h3>
 <p>
-        Working on optimizing ETL pipelines and SQL query performance for large-scale data integration. Built internal tools for monitoring data quality and automated anomaly detection. Collaborated with engineering teams to improve data ingestion reliability.
+        Yet to start.
 </p>
 </div>
 </div>
@@ -28,8 +28,7 @@ A timeline of my professional and technical experience.
 <div class="timeline-marker"></div>
 <div class="timeline-content">
 <h3>ML Intern — Providence</h3>
-<p>
-        Developed RAG-based tools with ER diagram support and prompt engineering for healthcare data. Improved NLP pipeline accuracy and contributed to internal knowledge base automation. Gained experience in deploying ML models in production.
+<p>Ideated, designed, developed and deployed an end-to-end internal product which converts Power BI reports into well-detailed documentation in company-approved format, which is being used presently by 500+ employees. Additionally developed RAG-based document QA tool from scratch supporting PDF, CSV, and Power BI files using vector embeddings, pgvector database for cosine similarity search, and LLM completion with source attribution.
 </p>
 </div>
 </div>
@@ -41,9 +40,9 @@ A timeline of my professional and technical experience.
 </div>
 <div class="timeline-marker"></div>
 <div class="timeline-content">
-<h3>Student — BITS Pilani Hyderabad Campus</h3>
+<h3>Summer Intern — Jio Platforms Ltd.</h3>
 <p>
-        Final year Computer Science undergraduate. Focused on reinforcement learning, robotics, and backend systems. Led multiple technical projects and contributed to open-source initiatives.
+Gained proficiency in the bug life cycle and software development life cycle through manual testing of diverse engagements in JioEngage platform
 </p>
 </div>
 </div>

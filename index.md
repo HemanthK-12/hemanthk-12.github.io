@@ -40,17 +40,17 @@ title: Home
   
   <div class="project-list">
     <div class="project-item">
-      <h3><a href="https://github.com/HemanthK-12/make-my-mail">MakeMyMail</a></h3>
+      <h3><a href="/projects/#makemymail">MakeMyMail</a></h3>
       <p>A system to manage emails efficiently. </p>
       <p class="project-tech">SpringBoot, PostgreSQL, Supabase and NextJS</p>
     </div>
     <div class="project-item">
-      <h3><a href="https://github.com/yourusername/project2">Cuffless BP-Prediction System</a></h3>
+      <h3><a href="/projects/#cuffless-bp-prediction-system">Cuffless BP-Prediction System</a></h3>
       <p>Cuffless BP prediction system using RDDM diffusion model for PPG-to-ECG generation and LSTM for ABP wave prediction</p>
       <p class="project-tech">Python</p>
     </div>
     <div class="project-item">
-      <h3><a href="https://github.com/yourusername/project3">ReportIQ - Wiki Generator</a></h3>
+      <h3><a href="/projects/#reportiq---wiki-generator">ReportIQ - Wiki Generator</a></h3>
       <p>Power BI report-to-documentation generator using Streamlit that parses JSON TMDL files to auto-generate ER diagrams and detailed wiki pages</p>
       <p class="project-tech">Python, Streamlit</p>
     </div>
@@ -63,7 +63,7 @@ title: Home
   <h2>Latest Posts</h2>
   
   <ul class="post-list">
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:2 %}
     <li>
       <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
