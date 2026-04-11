@@ -6,7 +6,7 @@ title: Home
 <div class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <h1 class="hero-name">Hemanth Karthikeya G</h1>
+      <h1 class="hero-name" id="hero-name">Hemanth Karthikeya G</h1>
       <p class="hero-tagline">Data Scientist Intern at Hevo Data | CS Final Year Student</p>
     </div>
     <div class="hero-image">

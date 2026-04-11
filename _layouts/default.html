@@ -52,5 +52,37 @@
     </p>
   </footer>
 
+
+<script>
+(function () {
+  var CHARS = "abcdefghijklmnopqrstuvwxyz!@#$%^&*-_=+~<>";
+  var FRAMES_PER_CHAR = 8;
+  var SPEED = 20;
+
+  function scramble(el) {
+    var FINAL = el.textContent.trim().toLowerCase();
+    var frame = 0;
+    var tick = setInterval(function () {
+      var resolved = Math.floor(frame / FRAMES_PER_CHAR);
+      el.textContent = FINAL.split("").map(function (ch, i) {
+        if (ch === " ") return " ";
+        if (i < resolved) return ch;
+        return CHARS[Math.floor(Math.random() * CHARS.length)];
+      }).join("");
+      frame++;
+      if (resolved >= FINAL.length) {
+        clearInterval(tick);
+        el.textContent = FINAL;
+      }
+    }, SPEED);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var el = document.querySelector(".page-title, .post-title, #hero-name");
+    if (el) scramble(el);
+  });
+})();
+</script>
+
 </body>
 </html>
