@@ -16,45 +16,6 @@ yourusername.github.io/
 │   └── images/
 └── resume.pdf
 ```
-# Developer Portfolio Guidelines
-
-## Design Philosophy
-
-**Core Principle**: Minimal, dark, text-first — like reading well-written documentation.
-
-### Visual Rules (Non-Negotiable)
-
-| Element | Rule |
-|---------|------|
-| Background | Dark (`#1a1a1a` or `#0d1117`) |
-| Text | High contrast (`#e6e6e6` or `#c9d1d9`) |
-| Animations | ❌ None |
-| Gradients | ❌ None |
-| Shadows | ❌ None |
-| Icons | ❌ Minimal/None |
-| Font | ONE family only (system/JetBrains Mono/Inter) |
-| Max Width | 720-800px (centered) |
-| Line Height | 1.6-1.7 |
-
-### What This Portfolio Is NOT
-
-- ❌ Marketing page
-- ❌ Dashboard with widgets
-- ❌ Animated showcase
-- ❌ Card-heavy layout
-- ❌ Social media hub
-
-### What This Portfolio IS
-
-- ✅ Technical writing portfolio
-- ✅ Project documentation hub
-- ✅ Serious engineering presence
-- ✅ Long-term stable design
-- ✅ README.md aesthetic
-
----
-
-## Content Requirements
 
 ### Essential Sections
 
@@ -99,32 +60,6 @@ Content with:
 ```
 
 ---
-
-## Technical Stack
-
-### Jekyll Setup
-
-**Why Jekyll?**
-- Native GitHub Pages support
-- Markdown → HTML
-- Built-in syntax highlighting
-- Zero-cost hosting
-
-**Theme**: `minima` (barebones) + custom CSS
-
-**File Structure**
-```
-yourusername.github.io/
-├── _config.yml
-├── index.md
-├── projects.md
-├── now.md
-├── _blog/
-│   └── YYYY-MM-DD-title.md
-├── _layouts/
-├── assets/css/style.css
-└── resume.pdf
-```
 
 ### Local Development Workflow
 

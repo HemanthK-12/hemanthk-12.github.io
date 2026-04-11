@@ -49,127 +49,126 @@ Gained proficiency in the bug life cycle and software development life cycle thr
 </div>
 <style>
 .timeline {
-position: relative;
-margin: 3rem 0;
-padding: 2rem 0;
-max-width: 100%;
-padding-left: 1rem;
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  max-width: 100%;
+  padding-left: 1rem;
 }
 .timeline::before {
-content: '';
-position: absolute;
-left: 200px;
-top: 0;
-width: 3px;
-height: 100%;
-background: #555;
-z-index: 0;
+  content: '';
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #45475a;
+  z-index: 0;
 }
 .timeline-item {
-position: relative;
-margin-bottom: 3rem;
-display: grid;
-grid-template-columns: 150px auto 1fr;
-align-items: start;
-gap: 1.5rem;
-max-width: 1100px;
+  position: relative;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 150px auto 1fr;
+  align-items: start;
+  gap: 1.5rem;
+  max-width: 1100px;
 }
 .timeline-date-left {
-text-align: right;
-padding-right: 1rem;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding-top: 0.8rem;
+  text-align: right;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 0.8rem;
 }
 .date-month {
-font-size: 0.8rem;
-color: #bbb;
-text-transform: uppercase;
-letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: #a6adc8;
+  letter-spacing: 1px;
 }
 .date-year {
-font-size: 1.2rem;
-color: #fff;
-font-weight: bold;
-margin: 0.2rem 0;
+  font-size: 1.2rem;
+  color: #cdd6f4;
+  font-weight: bold;
+  margin: 0.2rem 0;
 }
 .date-time {
-font-size: 0.75rem;
-color: #888;
+  font-size: 0.75rem;
+  color: #6c7086;
 }
 .timeline-marker {
-position: relative;
-z-index: 1;
-width: 18px;
-height: 18px;
-background: #fff;
-border-radius: 50%;
-border: 4px solid #555;
-box-shadow: 0 0 0 4px #181818;
-flex-shrink: 0;
-margin-left: 1.5px;
-margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #cba6f7;
+  border-radius: 50%;
+  border: 4px solid #45475a;
+  box-shadow: 0 0 0 4px #1e1e2e;
+  flex-shrink: 0;
+  margin-left: 1.5px;
+  margin-top: 1.5rem;
 }
 .timeline-content {
-background: #1a1a1a;
-border: 1px solid #333;
-border-radius: 6px;
-padding: 1.3rem 1.8rem;
-color: #e0e0e0;
-box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-position: relative;
-max-width: 700px;
+  background: #181825;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  padding: 1.3rem 1.8rem;
+  color: #cdd6f4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  position: relative;
+  max-width: 700px;
 }
 .timeline-content::before {
-content: '';
-position: absolute;
-left: -8px;
-top: 18%;
-transform: translateY(-50%);
-width: 0;
-height: 0;
-border-top: 8px solid transparent;
-border-bottom: 8px solid transparent;
-border-right: 8px solid #333;
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 18%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #45475a;
 }
 .timeline-content h3 {
-margin-top: 0;
-margin-bottom: 0.7rem;
-font-size: 1.1rem;
-color: #fff;
-font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+  color: #b4befe;
+  font-weight: 600;
 }
 .timeline-content p {
-margin-bottom: 0;
-color: #bbb;
-line-height: 1.6;
-font-size: 0.92rem;
+  margin-bottom: 0;
+  color: #a6adc8;
+  line-height: 1.6;
+  font-size: 0.92rem;
 }
 @media (max-width: 768px) {
-.timeline {
-padding-left: 1rem;
+  .timeline {
+    padding-left: 1rem;
   }
-.timeline::before {
-left: 30px;
+  .timeline::before {
+    left: 30px;
   }
-.timeline-item {
-grid-template-columns: auto 1fr;
-gap: 1rem;
+  .timeline-item {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
   }
-.timeline-date-left {
-display: none;
+  .timeline-date-left {
+    display: none;
   }
-.timeline-marker {
-margin-left: 21px;
-margin-top: 1rem;
+  .timeline-marker {
+    margin-left: 21px;
+    margin-top: 1rem;
   }
-.timeline-content {
-margin-left: 1rem;
-max-width: 100%;
+  .timeline-content {
+    margin-left: 1rem;
+    max-width: 100%;
   }
-.timeline-content::before {
-display: none;
+  .timeline-content::before {
+    display: none;
   }
 }
 </style>
