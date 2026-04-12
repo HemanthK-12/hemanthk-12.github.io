@@ -99,8 +99,28 @@ header {
 
 nav {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
   font-size: 0.95rem;
+}
+
+.nav-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--mauve);
+  border: none;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.nav-brand:hover {
+  color: var(--lavender);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 nav a {
@@ -190,33 +210,6 @@ section h2 {
 /* About Section */
 .about p {
   color: var(--text-secondary);
-}
-
-/* Now Section */
-.now ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.now li {
-  padding-left: 1.5rem;
-  position: relative;
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-}
-
-.now li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: var(--mauve);
-}
-
-.now-updated {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-top: 1rem;
-  font-style: italic;
 }
 
 /* Projects Section */
@@ -568,6 +561,11 @@ footer a:hover {
   h2 { font-size: 1.3rem; }
 
   nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
     gap: 1rem;
     font-size: 0.9rem;
   }
@@ -583,6 +581,102 @@ footer a:hover {
 
   .project-item {
     padding: 1rem;
+  }
+}
+
+/* TIL preview on homepage — single column */
+.til-preview-grid {
+  columns: 1 !important;
+}
+
+/* The More You Know - Masonry Card Grid */
+.tmyk-intro {
+  color: var(--subtext0);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.tmyk-grid {
+  columns: 2;
+  column-gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tmyk-card {
+  break-inside: avoid;
+  background: var(--mantle);
+  border: 1px solid var(--surface1);
+  border-top: 2px solid var(--card-accent, var(--surface1));
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.tmyk-card:hover {
+  border-top-color: var(--card-accent, var(--mauve));
+  border-color: var(--card-accent, var(--mauve));
+  transform: translateY(-2px);
+}
+
+.tmyk-card[data-cat="concept"]     { --card-accent: var(--mauve); }
+.tmyk-card[data-cat="tip"]         { --card-accent: var(--teal); }
+.tmyk-card[data-cat="syntax"]      { --card-accent: var(--green); }
+.tmyk-card[data-cat="insight"]     { --card-accent: var(--blue); }
+.tmyk-card[data-cat="gotcha"]      { --card-accent: var(--red); }
+.tmyk-card[data-cat="rabbit hole"] { --card-accent: var(--peach); }
+.tmyk-card[data-cat="tool"]        { --card-accent: var(--sapphire); }
+.tmyk-card[data-cat="math"]        { --card-accent: var(--yellow); }
+
+.tmyk-card.wide {
+  column-span: all;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--card-accent, var(--subtext0));
+  border: 1px solid var(--card-accent, var(--surface1));
+  border-radius: 3px;
+  padding: 0.1em 0.5em;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.04em;
+}
+
+.card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.card-body {
+  font-size: 0.87rem;
+  color: var(--subtext0);
+  margin: 0;
+  line-height: 1.65;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-body code {
+  font-size: 0.82em;
+  background: var(--surface0);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  color: var(--green);
+  text-transform: none;
+}
+
+@media (max-width: 640px) {
+  .tmyk-grid {
+    columns: 1;
+  }
+  .tmyk-card.wide {
+    column-span: unset;
   }
 }
 

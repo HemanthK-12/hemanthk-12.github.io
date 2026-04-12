@@ -29,6 +29,8 @@ kramdown:
 collections:
   projects:
     output: false
+  til:
+    output: false
 
 # Exclude from build
 exclude:
@@ -52,13 +54,13 @@ navigation:
   - title: Home
     url: /
   - title: Experience
-    url: /experience
+    url: /experience/
   - title: Blog
-    url: /blog
+    url: /blog/
   - title: Projects
-    url: /projects
-  - title: Now
-    url: /now
+    url: /projects/
+  - title: TIL
+    url: /til/
 
 # Footer links
 footer_links:
