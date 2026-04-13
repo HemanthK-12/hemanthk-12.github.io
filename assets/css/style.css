@@ -573,6 +573,151 @@ pre code {
   color: var(--sapphire);
 }
 
+/* Experience Timeline */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 150px 18px 1fr;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Each item (except the last) draws the line from its own marker center
+   down to the next item's marker center. Adding a new item automatically
+   gets a connector because of :not(:last-child). */
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: calc(150px + 1.5rem + 9px - 1px); /* date-col + gap + half-marker - half-line */
+  top: calc(1.5rem + 9px);                /* marker center (margin-top + half height) */
+  bottom: calc(-2.5rem - 1.5rem - 9px);  /* reach next item's marker center */
+  width: 2px;
+  background: var(--surface1);
+  z-index: 0;
+}
+
+.timeline-date-left {
+  text-align: right;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.date-month {
+  font-size: 0.75rem;
+  color: var(--subtext0);
+  letter-spacing: 0.08em;
+}
+
+.date-year {
+  font-size: 1.1rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.date-time {
+  font-size: 0.7rem;
+  color: var(--overlay0);
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  margin-top: 1.5rem;
+  background: var(--mauve);
+  border-radius: 50%;
+  border: 3px solid var(--surface1);
+  box-shadow: 0 0 0 3px var(--base);
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  background: var(--mantle);
+  border: 1px solid var(--surface1);
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  position: relative;
+}
+
+/* Arrow pointing left toward the marker.
+   top: calc(1.5rem + 9px) = marker margin-top + half marker height,
+   which is constant regardless of content length. */
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: calc(1.5rem + 9px);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 9px solid var(--surface1);
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: calc(1.5rem + 9px);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 8px solid var(--mantle);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--lavender);
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: var(--subtext0);
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    grid-template-columns: 18px 1fr;
+    gap: 1rem;
+  }
+
+  .timeline-date-left {
+    display: none;
+  }
+
+  .timeline-content::before,
+  .timeline-content::after {
+    display: none;
+  }
+}
+
 /* Blockquotes */
 blockquote {
   border-left: 3px solid var(--mauve);

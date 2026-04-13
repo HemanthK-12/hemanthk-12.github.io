@@ -3,172 +3,61 @@ layout: page
 title: Experience
 permalink: /experience/
 ---
-A timeline of my professional and technical experience.
+
+<!-- To add a new entry, uncomment this segment -->
+
+<!-- <div class="timeline-item">
+  <div class="timeline-date-left">
+    <span class="date-month">MON</span>
+    <span class="date-year">YYYY</span>
+    <span class="date-time">End / Present</span>
+  </div>
+  <div class="timeline-marker"></div>
+  <div class="timeline-content">
+    <h3>Role — Company</h3>
+    <p>Description.</p>
+  </div>
+</div> -->
+
 <div class="timeline">
-<div class="timeline-item">
-<div class="timeline-date-left">
-<span class="date-month">MAY</span>
-<span class="date-year">2024</span>
-<span class="date-time">Present</span>
+
+  <div class="timeline-item">
+    <div class="timeline-date-left">
+      <span class="date-month">Jan</span>
+      <span class="date-year">2026</span>
+      <span class="date-time">Present</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>SDE Intern — Hevo Data</h3>
+      <p>Working on ELT pipelines, database systems, java concurrency and solving problems in a production-based environment.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date-left">
+      <span class="date-month">may</span>
+      <span class="date-year">2025</span>
+      <span class="date-time">july 2025</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>ML Intern — Providence</h3>
+      <p>Ideated, designed, developed and deployed an end-to-end internal product which converts Power BI reports into well-detailed documentation in company-approved format, being used by 500+ employees. Additionally developed a RAG-based document QA tool supporting PDF, CSV, and Power BI files using vector embeddings, pgvector cosine similarity search, and LLM completion with source attribution.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date-left">
+      <span class="date-month">may</span>
+      <span class="date-year">2024</span>
+      <span class="date-time">july 2024</span>
+    </div>
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>Summer Intern — Jio Platforms Ltd.</h3>
+      <p>Gained proficiency in the bug life cycle and software development life cycle through manual testing of diverse engagements in the JioEngage platform.</p>
+    </div>
+  </div>
+
 </div>
-<div class="timeline-marker"></div>
-<div class="timeline-content">
-<h3>Data Scientist Intern — Hevo Data</h3>
-<p>
-        Yet to start.
-</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-date-left">
-<span class="date-month">JAN</span>
-<span class="date-year">2024</span>
-<span class="date-time">Apr 2024</span>
-</div>
-<div class="timeline-marker"></div>
-<div class="timeline-content">
-<h3>ML Intern — Providence</h3>
-<p>Ideated, designed, developed and deployed an end-to-end internal product which converts Power BI reports into well-detailed documentation in company-approved format, which is being used presently by 500+ employees. Additionally developed RAG-based document QA tool from scratch supporting PDF, CSV, and Power BI files using vector embeddings, pgvector database for cosine similarity search, and LLM completion with source attribution.
-</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-date-left">
-<span class="date-month">AUG</span>
-<span class="date-year">2021</span>
-<span class="date-time">Present</span>
-</div>
-<div class="timeline-marker"></div>
-<div class="timeline-content">
-<h3>Summer Intern — Jio Platforms Ltd.</h3>
-<p>
-Gained proficiency in the bug life cycle and software development life cycle through manual testing of diverse engagements in JioEngage platform
-</p>
-</div>
-</div>
-</div>
-<style>
-.timeline {
-  position: relative;
-  margin: 3rem 0;
-  padding: 2rem 0;
-  max-width: 100%;
-  padding-left: 1rem;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 200px;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: #45475a;
-  z-index: 0;
-}
-.timeline-item {
-  position: relative;
-  margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: 150px auto 1fr;
-  align-items: start;
-  gap: 1.5rem;
-  max-width: 1100px;
-}
-.timeline-date-left {
-  text-align: right;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-top: 0.8rem;
-}
-.date-month {
-  font-size: 0.8rem;
-  color: #a6adc8;
-  letter-spacing: 1px;
-}
-.date-year {
-  font-size: 1.2rem;
-  color: #cdd6f4;
-  font-weight: bold;
-  margin: 0.2rem 0;
-}
-.date-time {
-  font-size: 0.75rem;
-  color: #6c7086;
-}
-.timeline-marker {
-  position: relative;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  background: #cba6f7;
-  border-radius: 50%;
-  border: 4px solid #45475a;
-  box-shadow: 0 0 0 4px #1e1e2e;
-  flex-shrink: 0;
-  margin-left: 1.5px;
-  margin-top: 1.5rem;
-}
-.timeline-content {
-  background: #181825;
-  border: 1px solid #45475a;
-  border-radius: 6px;
-  padding: 1.3rem 1.8rem;
-  color: #cdd6f4;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  position: relative;
-  max-width: 700px;
-}
-.timeline-content::before {
-  content: '';
-  position: absolute;
-  left: -8px;
-  top: 18%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-right: 8px solid #45475a;
-}
-.timeline-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
-  color: #b4befe;
-  font-weight: 600;
-}
-.timeline-content p {
-  margin-bottom: 0;
-  color: #a6adc8;
-  line-height: 1.6;
-  font-size: 0.92rem;
-}
-@media (max-width: 768px) {
-  .timeline {
-    padding-left: 1rem;
-  }
-  .timeline::before {
-    left: 30px;
-  }
-  .timeline-item {
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
-  }
-  .timeline-date-left {
-    display: none;
-  }
-  .timeline-marker {
-    margin-left: 21px;
-    margin-top: 1rem;
-  }
-  .timeline-content {
-    margin-left: 1rem;
-    max-width: 100%;
-  }
-  .timeline-content::before {
-    display: none;
-  }
-}
-</style>
