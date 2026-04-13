@@ -16,16 +16,6 @@ title: Home
   </div>
 </div>
 
-<!-- <section class="now">
-  <h2>Now</h2>
-  <ul>
-    <li>Developing MakeMyMail, mass emails management platform for myself.</li>
-    <li>Upskilling and going deep into CS fundamentals, in Full Stack, Data science and DevOps.</li>
-    <li>Organizing stuff and self hosting whatever I can.</li>
-  </ul>
-  <p class="now-updated">Last updated: December 2025</p>
-</section> -->
-
 <section class="blog-preview">
   <h2>posts</h2>
   
@@ -40,6 +30,37 @@ title: Home
 
   <p class="view-all"><a href="/blog">View all posts →</a></p>
 </section>
+
+<section class="til-preview">
+  <h2>til</h2>
+
+  <div id="til-pool" hidden>
+    {% for card in site.til %}
+    <div class="tmyk-card" data-cat="{{ card.cat }}">
+      <h3 class="card-title">{{ card.title }}</h3>
+      <div class="card-body">{{ card.content }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div id="til-sample" class="tmyk-grid til-preview-grid"></div>
+
+  <p class="view-all"><a href="/til">View all →</a></p>
+</section>
+
+<script>
+(function () {
+  var pool = Array.from(document.getElementById('til-pool').children);
+  for (var i = pool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+  }
+  var sample = document.getElementById('til-sample');
+  pool.slice(0, 2).forEach(function (card) {
+    sample.appendChild(card.cloneNode(true));
+  });
+})();
+</script>
 
 <section class="contact">
   <h2>Contact</h2>
