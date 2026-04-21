@@ -6,7 +6,6 @@ permalink: /blog/
 
 A collection of technical posts on reinforcement learning, robotics, and control systems.
 
----
 
 <div class="blog-list">
   {% for post in site.posts %}
