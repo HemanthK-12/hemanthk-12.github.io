@@ -7,7 +7,10 @@ permalink: /posts/2026-04-21-server-story/
 ---
 
 Making a server is very straightforward and requires no highend hardware and is completely free(excluding negligible electricty costs). For example, the initial draft of my server worked on an i3-2nd gen cpu with 4GB ram (ddr3, ouch), and it still worked great. only with some small storage and ram modifications, I am still maining the same system.
-![Glances screenshot](/assets/letter-h.png)
+  <figure>   
+    <img src="/assets/image.png" alt="alt text">
+    <figcaption>my present cpu and ram through my monitoring tool (the uptime is in DD:HH:MM) </figcaption>                                      
+  </figure>
 
 ## How this journey started
 

@@ -93,5 +93,50 @@
 })();
 </script>
 
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var imgs = document.querySelectorAll('.post-content img');
+    if (!imgs.length) return;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+
+    var lightImg = document.createElement('img');
+    var hint = document.createElement('p');
+    hint.className = 'lightbox-hint';
+    hint.textContent = 'click or esc to close';
+
+    overlay.appendChild(lightImg);
+    overlay.appendChild(hint);
+    document.body.appendChild(overlay);
+
+    function open(src, alt) {
+      lightImg.src = src;
+      lightImg.alt = alt || '';
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    imgs.forEach(function (img) {
+      img.addEventListener('click', function () {
+        open(img.src, img.alt);
+      });
+    });
+
+    overlay.addEventListener('click', close);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') close();
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
